@@ -31,7 +31,7 @@ body {
 /****** HEADER ******/
 
 header {
-	height: 175px;
+	height: 180px;
 	overflow: hidden;
 	border-bottom: 2px solid #A60903;
 	font-family: bebas, sans-serif;
@@ -44,12 +44,12 @@ header {
 	padding-top: 25px;
 	padding-bottom: 40px;
 	color: #200201;
-	font-size: 15pt;
+	font-size: 16pt;
 }
 
 #caption h1 {
 	color: #A60903;
-	font-size: 55pt;
+	font-size: 56pt;
 }
 
 nav {
@@ -66,7 +66,7 @@ nav ul li {
 	padding: 6px 0;
 	display: block;
 	text-align: center;
-	font-size: 15pt;
+	font-size: 16pt;
 }
 
 nav ul li a {
@@ -98,10 +98,9 @@ nav ul li a:hover {
 	text-align: justify;
 }
 
-.info h3 {
-	margin-bottom: 10px;
-	font-size: 18pt;
-	text-align: center;
+.info .quote {
+	font-style: italic;
+	text-align: right;
 }
 
 /****** ADVERTISEMENT ******/
@@ -127,6 +126,7 @@ footer {
 	margin-top: 10px;
 	border-top: 2px solid #A60903;
 	font-family: bebas, sans-serif;
+	font-size: 13pt;
 	overflow: hidden;
 }
 
