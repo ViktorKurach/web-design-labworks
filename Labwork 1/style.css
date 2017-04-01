@@ -63,7 +63,7 @@ nav ul {
 
 nav ul li {
 	height: auto;
-	padding: 6px 0;
+	padding: 10px 0;
 	display: block;
 	text-align: center;
 	font-size: 16pt;
@@ -78,29 +78,89 @@ nav ul li a:hover {
 	color: #200201;
 }
 
-/****** MAIN PAGE ******/
+/****** CONTENT ******/
 
-.info {
+.content {
 	padding: 30px;
 	overflow: hidden;
 	font-family: vodafone, serif;
+	font-size: 16pt;
 }
 
-.info img {
+.content .quote {
+	font-style: italic;
+	text-align: right;
+}
+
+.content h3 {
+	font-size: 16pt;
+	margin-left: 40px;
+	font-style: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.content img {
 	float: left;
 	margin-right: 30px;
 	margin-bottom: 20px;
 }
 
-.info p {
+.content p {
 	margin-bottom: 10px;
-	font-size: 16pt;
 	text-align: justify;
 }
 
-.info .quote {
+.content ul {
+	list-style: none;
+	margin-bottom: 50px;
+}
+
+.content ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.content ul li a:hover {
+	text-decoration: underline;
+}
+
+.content .collection {
+	box-sizing: border-box;
+	width: 33.333333%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.content .collection:last-of-type {
+	margin-bottom: 0;	
+}
+
+.content .collection:nth-last-of-type(2) {
+	margin-bottom: 0;
+}
+
+.content .collection img {
+	float: none;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.content .collection p {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.content .poetry {
+	margin-bottom: 50px;
+}
+
+.content .poetry .note {
+	margin-top: 35px;
 	font-style: italic;
-	text-align: right;
+	font-size: 14pt;
 }
 
 /****** ADVERTISEMENT ******/
@@ -133,7 +193,7 @@ footer {
 footer ul li {
 	float: left;
 	display: inline-block;
-	width: 20%;
+	width: 25%;
 	text-align: center;
 }
 
