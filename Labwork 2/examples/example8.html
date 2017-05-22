@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function add() {
+			var b = document.createElement("input")
+			b.type = "text"
+			b.id = "i"+document.getElementById("frm").appendChild(b)
+		}
+		function del() {
+			var cnt = document.getElementById("frm").elements.length
+			if (cnt < 3)
+				return
+			var last = document.getElementById("frm").elements[cnt-1]
+			document.getElementById("frm").removeChild(last)
+		}
+	</script>
+</head>
+<body>
+	<form id="frm">
+		<input type="button" onclick="add()" value="Створити">
+		<input type="button" onclick="del()" value="Вилучити останній">
+	</form>
+</body>
+</html>

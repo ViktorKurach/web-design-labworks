@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function f() {
+			var im1 = document.getElementById('im1')
+			var im2 = document.getElementById('im2')
+			var im_im2_old = im1.parentNode.replaceChild(im1, im2)
+			im1.parentNode.insertBefore(im_im2_old, im1)
+		}
+	</script>
+</head>
+<body onload="f()">
+	<img src="../images/greeting.jpg" id="im1">
+	<img src="../images/green.jpg" id="im2">
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function f() {
+			var c = document.getElementById('container')
+			c.parentNode.removeChild(c)
+		}
+	</script>
+</head>
+<body onload="f()">
+	<div id="container">Вміст</div>
+	<div id="another">Інший вміст</div>
+</body>
+</html>

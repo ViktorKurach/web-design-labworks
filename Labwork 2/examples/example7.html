@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function f() {
+			var v = document.getElementById('a').value
+			var p = new RegExp("^[a-z_]+$", "m")
+			var res = p.test(v)
+			if (!res)
+				alert("Недопустимі символи")
+			return res
+		}
+	</script>
+</head>
+<body>
+	<form action="" onsubmit="return f()">
+		Поле [a..z_]
+		<input type="text" id="a" name="">
+		<input type="submit" value="Перевірити">
+	</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function f() {
+			var p = document.getElementsByName('r1')
+			for (i in p)
+				p[i].selected = ""
+		}
+	</script>
+</head>
+<body>
+	<form onsubmit="f()">
+		<input type="radio" name="r1" selected="selected">V1
+		<input type="radio" name="r1">V2
+		<input type="radio" name="r1">V3
+		<input type="submit">
+	</form>
+</body>
+</html>
