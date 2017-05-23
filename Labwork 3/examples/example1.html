@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$.ajax({
+				type: "GET",
+				url: "data.xml",
+				dataType: "xml",
+				success: function(xml) {
+					$(xml).find("man").each(function() {
+						document.writeln($(this).attr("id"))
+						$(this).find("name").each(function() {
+							document.writeln($(this).text())
+						})
+					})
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+
+</body>
+</html>

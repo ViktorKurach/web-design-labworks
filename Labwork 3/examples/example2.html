@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		function f(n) {
+			$.getJSON("user.json", {}, function(json) {
+				$("#username").val(json["data"][n].name)
+				$("#userage").val(json["data"][n].age)
+			})
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" value="" id="username"><br>
+		<input type="text" value="" id="userage"><br>
+	</form>
+	<button value="User1" onclick="f(0)">User 1</button>
+	<button value="User2" onclick="f(1)">User 2</button>
+</body>
+</html>

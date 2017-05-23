@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		function f() {
+			$.post("form.php", $("#frm").serialize(), function(data) {
+				$("#d2").html(data)
+			})
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<div id="d1" onclick="$.get('1.txt', function(data) { $('#d1').html(data) })">click d1</div>
+	<div id="d2">Send the form data...</div>
+	<div id="d3" onclick="$('#d3').load('3.txt')">click d3</div>
+	<form id="frm" onsubmit="return f()">
+		<input type="text" id="i1" name="i1">
+		<input type="text" id="i2" name="i2">
+		<input type="submit" value="Send">
+	</form>
+</body>
+</html>

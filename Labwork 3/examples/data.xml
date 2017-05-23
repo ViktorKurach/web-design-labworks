@@ -1,0 +1,7 @@
+<people>
+	<man id="m1">
+		<name id="n1">John</name>
+	</man>
+	<man id="m2" />
+	<man id="m3" />
+</people>
