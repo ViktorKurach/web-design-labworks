@@ -1,4 +1,4 @@
-# web-design-labworks
+# Web-Design-Labworks
 Labworks for 'Web Design', NTUU 'KPI', spring 2017
 
 Instruments:
